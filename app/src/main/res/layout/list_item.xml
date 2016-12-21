@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="88dp"
+    >
+
+    <ImageView
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:id="@+id/imgshow"/>
+    <LinearLayout
+        android:layout_height="88dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/imgshow"
+        android:paddingLeft="16dp"
+        android:id="@+id/textcontainer"
+        >
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+         android:layout_weight="1"
+         android:id="@+id/txtMiwork"
+
+            android:gravity="bottom"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceMedium"
+        />
+        <!-- To create a linear layout in which each child uses
+        the same amount of space on the screen, set the
+        android:layout_height of each view to "0dp" (for a vertical layout)
+         or the android:layout_width of each view to "0dp" (for a horizontal).
+        Then set the android:layout_weight of each view to "1".-->
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:id="@+id/txtdefault"
+    android:gravity="top"
+    android:textAppearance="?android:textAppearanceMedium"
+    />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/icon"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/color_red"
+
+
+        />
+
+
+</RelativeLayout>
